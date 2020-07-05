@@ -1,0 +1,28 @@
+:root {
+  /* --primary-color: #00e09e; */
+  /* --primary-color: #fff143; */
+  /* --primary-color: #75878a; */
+  /* --primary-color: #622a1d; */
+  /* --primary-color: #44cef6; */
+  --primary-color: coral;
+  --primary-color--active: chocolate;
+  --normal-size: 32px;
+}
+
+html {
+  background: var(--primary-color, coral);
+}
+::-webkit-scrollbar {
+  width: 12px;
+  height: 1px;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--primary-color--active, coral);
+  /* background: rgba(255, 255, 255, 0.2); */
+  box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+  border-radius: 6px;
+}
+::-webkit-scrollbar-track {
+  /* background: rgba(0, 0, 0, 0.2); */
+  background: rgba(255, 255, 255, 0.2);
+}
