@@ -1,5 +1,5 @@
 <template>
-  <ul class="x-menu">
+  <ul class="x-menu x-glass">
     <li
       v-for="item in dataSource"
       :key="item.key"
@@ -49,22 +49,7 @@ export default {
   line-height: 60px;
   list-style: none;
   margin: 0;
-  overflow: hidden;
   padding: 0 16px;
-  position: relative;
-}
-.x-menu::before {
-  --blur: 10;
-  background: rgba(255, 255, 255, 0.2);
-  content: "";
-  display: block;
-  filter: blur(calc(var(--blur) * 1px));
-  position: absolute;
-  bottom: calc(var(--blur) * -1px);
-  left: calc(var(--blur) * -1px);
-  right: calc(var(--blur) * -1px);
-  top: calc(var(--blur) * -1px);
-  z-index: -1;
 }
 .x-menu .x-menu-item {
   color: #eee;

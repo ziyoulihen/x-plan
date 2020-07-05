@@ -13,9 +13,6 @@
 export default {
   name: "FormItem",
   props: ["label", "required"],
-  setup(props) {
-    console.log(props);
-  },
 };
 </script>
 

@@ -7,7 +7,6 @@
       :accept="accept"
       :multiple="multiple"
     />
-
     <slot name="default"></slot>
   </span>
 </template>
